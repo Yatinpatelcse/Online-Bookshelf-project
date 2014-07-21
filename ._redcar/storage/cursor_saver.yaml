@@ -1,0 +1,53 @@
+--- 
+cursor_positions: 
+  - :path: db/seeds.rb
+    :cursor_offset: 3700
+    :timestamp: 2014-07-19 15:10:18.583000 -07:00
+  - :path: app/controllers/books_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2014-07-19 15:03:44.493000 -07:00
+  - :path: app/views/books/index.json.jbuilder
+    :cursor_offset: 0
+    :timestamp: 2014-07-19 15:03:45.037000 -07:00
+  - :path: app/views/books/new.html.erb
+    :cursor_offset: 0
+    :timestamp: 2014-07-19 15:03:44.691000 -07:00
+  - :path: app/views/books/show.html.erb
+    :cursor_offset: 0
+    :timestamp: 2014-07-19 15:03:44.674000 -07:00
+  - :path: app/views/books/show.json.jbuilder
+    :cursor_offset: 0
+    :timestamp: 2014-07-19 15:03:45.051000 -07:00
+  - :path: db/migrate/20140719220344_create_books.rb
+    :cursor_offset: 217
+    :timestamp: 2014-07-19 15:03:44.154000 -07:00
+  - :path: test/models/book_test.rb
+    :cursor_offset: 0
+    :timestamp: 2014-07-19 15:03:44.363000 -07:00
+  - :path: test/controllers/books_controller_test.rb
+    :cursor_offset: 21
+    :timestamp: 2014-07-19 15:03:44.858000 -07:00
+  - :path: app/controllers/application_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2014-07-19 14:59:49.883000 -07:00
+  - :path: app/models/book.rb
+    :cursor_offset: 476
+    :timestamp: 2014-07-19 16:19:36.918000 -07:00
+  - :path: app/assets/stylesheets/books.css.scss
+    :cursor_offset: 176
+    :timestamp: 2014-07-19 15:03:45.228000 -07:00
+  - :path: app/assets/stylesheets/scaffolds.css.scss
+    :cursor_offset: 638
+    :timestamp: 2014-07-19 15:03:45.339000 -07:00
+    :selection_offset: 621
+    :block_selection_mode: false
+  - :path: app/views/books/_form.html.erb
+    :cursor_offset: 637
+    :timestamp: 2014-07-19 15:33:36.067000 -07:00
+  - :path: app/views/books/edit.html.erb
+    :cursor_offset: 110
+    :timestamp: 2014-07-19 15:03:44.649000 -07:00
+  - :path: app/views/books/index.html.erb
+    :cursor_offset: 519
+    :timestamp: 2014-07-19 16:29:23.757000 -07:00
+files_to_retain: 0

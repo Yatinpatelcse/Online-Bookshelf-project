@@ -1,0 +1,56 @@
+<h1>Listing books</h1>
+<style type="text/css">
+    .title{
+        font-size: 15pt;
+        font-weight:bold;
+        margin-bottom: 16px;
+    }
+    .title a, a:hover{
+        color: green;
+    }
+    .description{
+        margin-bottom: 16px;
+    }
+    .price{
+        color:#000000;
+        font-weight: 800;
+        font-size: 14pt;
+        text-align: left;
+        margin-up: 8px;
+    }
+    .discount_price{
+        color: red;
+        font-weight: 800;
+        font-size: 14pt;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .image_url{
+
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+<table>
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td class="image_url"><%= link_to image_tag(book.image_url), book %></td>
+        <td>
+        <div class="title"><%= link_to book.title, book  %></div>
+        <div class="description">Description: <%= book.description %></div>
+        <div class="price">Price: <%=number_to_currency  book.price, :escape_units =>'$' %></div>
+        <div class="discount_price">Discount_price: <%=number_to_currency book.discount_price, :escape_units =>'$' %></div>
+        <div class="links"><%= link_to 'Show', book %> | <%= link_to 'Edit', edit_book_path(book) %> | <%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        </td>
+      </tr>
+      <tr><td colspan="2">
+        <hr />
+      </td></tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Book', new_book_path %>

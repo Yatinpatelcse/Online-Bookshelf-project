@@ -1,0 +1,7 @@
+--- 
+open_files: 
+  - app/assets/stylesheets/scaffolds.css.scss
+  - app/assets/stylesheets/books.css.scss
+  - app/views/books/_form.html.erb
+  - app/views/books/edit.html.erb
+  - app/views/books/index.html.erb
