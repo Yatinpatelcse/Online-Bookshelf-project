@@ -10,9 +10,13 @@
         <td>
         <div class="title"><%= link_to book.title, book  %></div>
         <div class="description">Description: <%= book.description %></div>
+        <% if book.price == book.discount_price %>
+        <div class="free">Price: <%= @free %></div>
+        <% else %>
         <div class="price">Price: <%=number_to_currency  (book.price) %></div>
         <% if book.discount_price != nil %>
         <div class="discount_price">Discount_price: <%=number_to_currency (book.discount_price) %></div>
+        <% end %>
         <% end %>
         <div class="links"><%= link_to 'Show', book, class: 'buttonCss' %> | <%= link_to 'Edit', edit_book_path(book),class:'buttonCss' %> | <%= link_to 'Delete', book,class: 'buttonCss', method: :delete, data: { confirm: 'Are you sure?' } %></div>
         </td>

@@ -5,6 +5,7 @@ class BooksController < ApplicationController
   # GET /books.json
   def index
     @books = Book.all
+    @free = 'Book is Free'
   end
   # GET /books/1
   # GET /books/1.json
