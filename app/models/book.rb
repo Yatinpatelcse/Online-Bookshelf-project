@@ -17,7 +17,7 @@ class Book < ActiveRecord::Base
   }
 
   def discount_price_cannot_be_greater_than_original_price
-    if self.discount_price?
+    if self.discount_price? && self.price?
       if self.discount_price > self.price
       errors.add(:discount_price, "Can't Be Greater Then Price")
       end
