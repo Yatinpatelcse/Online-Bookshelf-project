@@ -42,6 +42,7 @@ class BooksController < ApplicationController
   # PATCH/PUT /books/1.json
   def update
     @book = Book.find(params[:id])
+
     respond_to do |format|
       if @book.update(book_params)
         format.html { redirect_to @book, notice: 'Book was successfully updated.' }
@@ -58,6 +59,7 @@ class BooksController < ApplicationController
   def destroy
     @book = Book.find(params[:id])
     @book.destroy
+
     respond_to do |format|
       format.html { redirect_to books_url, notice: 'Book was successfully destroyed.' }
       format.json { head :no_content }
