@@ -4,8 +4,8 @@ class CreateBooks < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.string :image_url
-      t.decimal :price
-      t.decimal :discount_price
+      t.decimal :price, precision: 8, scale: 2
+      t.decimal :discount_price, precision: 8, scale: 2
 
       t.timestamps
     end

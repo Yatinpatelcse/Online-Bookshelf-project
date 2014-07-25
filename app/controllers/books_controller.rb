@@ -6,7 +6,6 @@ class BooksController < ApplicationController
   def index
     @books = Book.all
   end
-
   # GET /books/1
   # GET /books/1.json
   def show

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="975352242">
+  <component name="DataSourceManagerImpl" format="xml" hash="2558983531">
     <data-source source="LOCAL" name="Rails Bookshelf: development" uuid="d1a1c620-d238-4d9d-b9eb-ae5b914c1155">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:E:\ruby\row\quiz\Bookshelf\db\development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails Bookshelf: test" uuid="1fe5630d-b15f-476c-ab28-58fd257dffa4">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:E:\ruby\row\quiz\Bookshelf\db\test.sqlite3</jdbc-url>
       <libraries />
     </data-source>
   </component>

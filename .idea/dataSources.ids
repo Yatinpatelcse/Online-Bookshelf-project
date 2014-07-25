@@ -3,4 +3,7 @@
   <data-source source="LOCAL" name="Rails Bookshelf: development" uuid="d1a1c620-d238-4d9d-b9eb-ae5b914c1155">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails Bookshelf: test" uuid="1fe5630d-b15f-476c-ab28-58fd257dffa4">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>

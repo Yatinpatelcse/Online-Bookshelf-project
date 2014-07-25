@@ -1,3 +1,60 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.books {
+  background: lightcyan;
+  h1{
+    text-align: center;
+    font-size: medium;
+    border: 2px solid;
+    border-radius: 60px;
+    background: greenyellow;
+  }
+  table {
+    border-collapse: collapse;
+    }
+   table tr td {
+   padding: 2px;
+  vertical-align: top;
+   }
+  .title {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .title a, a:hover {
+    color: green;
+  }
+  .description {
+    margin-bottom: 10px;
+
+  }
+  .price {
+    color: #000000;
+    font-weight: 800;
+    font-size: 10pt;
+    text-align: left;
+    margin-up: 5px;
+  }
+  .discount_price {
+    color: blue;
+    font-weight: 800;
+    font-size: 10pt;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .list_image {
+       width: 90px;
+       height: 110px;
+  }
+  .list_line_even {
+    background: #ffff00;
+  }
+  .list_line_odd {
+    background: #ffb6c1;
+  }
+  .links{
+    float:left;
+    color: blue;
+  }
+}
