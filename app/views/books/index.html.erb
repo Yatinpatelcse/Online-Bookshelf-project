@@ -1,5 +1,7 @@
 <h1>BOOKSHELF CATALOG</h1>
 <hr />
+
+
 <table>
   <tbody>
     <% @books.each do |book| %>
@@ -10,10 +12,10 @@
         <div class="description">Description: <%= book.description %></div>
         <div class="price">Price: <%=number_to_currency  (book.price) %></div>
         <div class="discount_price">Discount_price: <%=number_to_currency (book.discount_price) %></div>
-        <div class="links"><%= link_to 'Show', book %> | <%= link_to 'Edit', edit_book_path(book) %> | <%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <div class="links"><%= link_to 'Show', book, class: 'buttonCss' %> | <%= link_to 'Edit', edit_book_path(book),class:'buttonCss' %> | <%= link_to 'Destroy', book,class: 'buttonCss', method: :delete, data: { confirm: 'Are you sure?' } %></div>
         </td>
       </tr>
-      <tr><td colspan="1">
+      <tr><td colspan="2">
         <hr />
       </td></tr>
     <% end %>
@@ -22,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Book', new_book_path %>
+<%= link_to 'New Book', new_book_path ,class: 'buttonCss'%>
