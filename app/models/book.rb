@@ -1,4 +1,5 @@
 class Book < ActiveRecord::Base
+  has_many :line_items
 
   before_validation :whitespace_removing
 
